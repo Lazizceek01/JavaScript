@@ -1,0 +1,9 @@
+name: Salom Dunyo Robot
+on: [push] # Har safar kod yuklaganda ishga tushadi
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest # GitHub sizga bepul Ubuntu server beradi
+    steps:
+      - name: Kodni tekshirish
+        run: echo "Salom Laziz! Kodingiz muvaffaqiyatli yuklandi va tekshiruvdan o'tdi."
