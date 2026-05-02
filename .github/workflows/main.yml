@@ -1,0 +1,17 @@
+name: Kod Tekshiruvchi Robot
+on: [push]
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodni yuklab olish
+        uses: actions/checkout@v4
+
+      - name: Node.js ni o'rnatish
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: JavaScript faylini ishga tushirish
+        run: node day1.js
