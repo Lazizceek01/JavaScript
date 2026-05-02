@@ -12,6 +12,8 @@
 
 // New product 
 
-let a = 1;
-let b = 2;
-console.log(a + b); } // <-- Mana shu yerga bitta qavs qo'shing
+let a = 5;
+let b = 3;
+let c = a + b;
+
+console.log(c)
